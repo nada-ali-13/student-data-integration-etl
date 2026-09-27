@@ -1,0 +1,683 @@
+2026-09-23 10:44:08,013 INFO Pipeline started
+2026-09-23 10:44:08,013 INFO CSV extraction started
+2026-09-23 10:44:08,016 INFO CSV records: 11
+2026-09-23 10:44:08,016 INFO API extraction started
+2026-09-23 10:48:58,485 INFO Pipeline started
+2026-09-23 10:48:58,485 INFO CSV extraction started
+2026-09-23 10:48:58,487 INFO CSV records: 11
+2026-09-23 10:48:58,487 INFO API extraction started
+2026-09-23 10:48:58,492 INFO API records: 10
+2026-09-23 10:48:58,492 INFO Database extraction started
+2026-09-23 10:59:33,079 INFO Pipeline started
+2026-09-23 10:59:33,079 INFO CSV extraction started
+2026-09-23 10:59:33,081 INFO CSV records: 11
+2026-09-23 10:59:33,081 INFO API extraction started
+2026-09-23 10:59:33,086 INFO API records: 10
+2026-09-23 10:59:33,098 INFO Database extraction started
+2026-09-23 10:59:33,099 INFO Database records: 10
+2026-09-23 10:59:33,100 INFO Source validation started
+2026-09-23 10:59:33,101 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 10:59:33,101 INFO Cleaning started
+2026-09-23 10:59:33,109 INFO Integration started
+2026-09-23 10:59:33,112 INFO Integrated records: 10
+2026-09-23 10:59:33,112 INFO Final validation started
+2026-09-23 10:59:33,114 INFO Transformation started
+2026-09-23 10:59:33,124 INFO Final dataset created
+2026-09-23 10:59:33,124 INFO PIPELINE EXECUTION SUMMARY
+2026-09-23 10:59:33,124 INFO CSV Records: 11
+2026-09-23 10:59:33,124 INFO API Records: 10
+2026-09-23 10:59:33,125 INFO Database Records: 10
+2026-09-23 10:59:33,125 INFO Integrated Records: 10
+2026-09-23 10:59:33,125 INFO Valid Records: 8
+2026-09-23 10:59:33,125 INFO Rejected Records: 2
+2026-09-23 10:59:33,125 INFO Duplicate Records: 0
+2026-09-23 10:59:33,125 INFO Missing Values: 0
+2026-09-23 10:59:33,125 INFO Processing Time: 0.05
+2026-09-23 11:28:23,190 INFO Pipeline started
+2026-09-23 11:28:23,191 INFO CSV extraction started
+2026-09-23 11:28:23,194 INFO CSV records: 11
+2026-09-23 11:28:23,194 INFO API extraction started
+2026-09-23 11:28:23,204 INFO API records: 10
+2026-09-23 11:28:23,204 INFO Database extraction started
+2026-09-23 11:28:23,206 INFO Database records: 10
+2026-09-23 11:28:23,206 INFO Source validation started
+2026-09-23 11:28:23,208 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 11:28:23,208 INFO Cleaning started
+2026-09-23 11:28:23,222 INFO Integration started
+2026-09-23 11:28:23,226 INFO Integrated records: 10
+2026-09-23 11:28:23,226 INFO Final validation started
+2026-09-23 11:28:23,229 INFO Transformation started
+2026-09-23 11:28:23,246 INFO Final dataset created
+2026-09-23 11:28:23,247 INFO PIPELINE EXECUTION SUMMARY
+2026-09-23 11:28:23,247 INFO CSV Records: 11
+2026-09-23 11:28:23,247 INFO API Records: 10
+2026-09-23 11:28:23,247 INFO Database Records: 10
+2026-09-23 11:28:23,247 INFO Integrated Records: 10
+2026-09-23 11:28:23,247 INFO Valid Records: 0
+2026-09-23 11:28:23,247 INFO Rejected Records: 2
+2026-09-23 11:28:23,247 INFO Duplicate Records: 1
+2026-09-23 11:28:23,247 INFO Missing Values: 2
+2026-09-23 11:28:23,247 INFO Processing Time: 0.06
+2026-09-23 11:53:21,879 INFO Pipeline started
+2026-09-23 11:53:21,879 INFO CSV extraction started
+2026-09-23 11:53:21,888 INFO CSV records: 11
+2026-09-23 11:53:21,889 INFO API extraction started
+2026-09-23 11:53:21,906 INFO API records: 10
+2026-09-23 11:53:21,906 INFO Database extraction started
+2026-09-23 11:53:21,911 INFO Database records: 10
+2026-09-23 11:53:21,911 INFO Source validation started
+2026-09-23 11:53:21,918 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 11:53:21,919 INFO Cleaning started
+2026-09-23 11:53:21,953 INFO Integration started
+2026-09-23 11:53:21,963 INFO Integrated records: 10
+2026-09-23 11:53:21,964 INFO Final validation started
+2026-09-23 11:53:21,975 INFO Transformation started
+2026-09-23 11:53:22,023 INFO Final dataset created
+2026-09-23 11:53:22,024 INFO PIPELINE EXECUTION SUMMARY
+2026-09-23 11:53:22,024 INFO CSV Records: 11
+2026-09-23 11:53:22,025 INFO API Records: 10
+2026-09-23 11:53:22,025 INFO Database Records: 10
+2026-09-23 11:53:22,025 INFO Integrated Records: 10
+2026-09-23 11:53:22,026 INFO Valid Records: 8
+2026-09-23 11:53:22,026 INFO Rejected Records: 2
+2026-09-23 11:53:22,026 INFO Duplicate Records: 1
+2026-09-23 11:53:22,026 INFO Missing Values: 2
+2026-09-23 11:53:22,026 INFO Processing Time: 0.15
+2026-09-23 11:58:11,948 INFO Pipeline started
+2026-09-23 11:58:11,948 INFO CSV extraction started
+2026-09-23 11:58:11,958 INFO CSV records: 11
+2026-09-23 11:58:11,958 INFO API extraction started
+2026-09-23 11:58:11,980 INFO API records: 10
+2026-09-23 11:58:11,980 INFO Database extraction started
+2026-09-23 11:58:11,986 INFO Database records: 10
+2026-09-23 11:58:11,986 INFO Source validation started
+2026-09-23 11:58:11,992 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 11:58:11,992 INFO Cleaning started
+2026-09-23 11:58:12,031 INFO Integration started
+2026-09-23 11:58:12,043 INFO Integrated records: 10
+2026-09-23 11:58:12,043 INFO Final validation started
+2026-09-23 11:58:12,054 INFO Transformation started
+2026-09-23 11:58:12,105 INFO Final dataset created
+2026-09-23 11:58:12,106 INFO PIPELINE EXECUTION SUMMARY
+2026-09-23 11:58:12,106 INFO CSV Records: 11
+2026-09-23 11:58:12,106 INFO API Records: 10
+2026-09-23 11:58:12,107 INFO Database Records: 10
+2026-09-23 11:58:12,107 INFO Integrated Records: 10
+2026-09-23 11:58:12,108 INFO Valid Records: 0
+2026-09-23 11:58:12,108 INFO Rejected Records: 2
+2026-09-23 11:58:12,109 INFO Duplicate Records: 1
+2026-09-23 11:58:12,109 INFO Missing Values: 2
+2026-09-23 11:58:12,109 INFO Processing Time: 0.16
+2026-09-23 12:00:08,623 INFO Pipeline started
+2026-09-23 12:00:08,624 INFO CSV extraction started
+2026-09-23 12:00:08,629 INFO CSV records: 11
+2026-09-23 12:00:08,630 INFO API extraction started
+2026-09-23 12:00:08,640 INFO API records: 10
+2026-09-23 12:00:08,641 INFO Database extraction started
+2026-09-23 12:00:08,644 INFO Database records: 10
+2026-09-23 12:00:08,644 INFO Source validation started
+2026-09-23 12:00:08,648 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 12:00:08,649 INFO Cleaning started
+2026-09-23 12:00:08,670 INFO Integration started
+2026-09-23 12:00:08,677 INFO Integrated records: 10
+2026-09-23 12:00:08,677 INFO Final validation started
+2026-09-23 12:00:08,684 INFO Transformation started
+2026-09-23 12:00:08,715 INFO Final dataset created
+2026-09-23 12:00:08,715 INFO PIPELINE EXECUTION SUMMARY
+2026-09-23 12:00:08,715 INFO CSV Records: 11
+2026-09-23 12:00:08,715 INFO API Records: 10
+2026-09-23 12:00:08,715 INFO Database Records: 10
+2026-09-23 12:00:08,715 INFO Integrated Records: 10
+2026-09-23 12:00:08,716 INFO Valid Records: 8
+2026-09-23 12:00:08,716 INFO Rejected Records: 2
+2026-09-23 12:00:08,716 INFO Duplicate Records: 1
+2026-09-23 12:00:08,716 INFO Missing Values: 2
+2026-09-23 12:00:08,716 INFO Processing Time: 0.09
+2026-09-23 12:37:01,378 INFO Pipeline started
+2026-09-23 12:37:01,378 INFO CSV extraction started
+2026-09-23 12:37:01,380 INFO CSV records: 11
+2026-09-23 12:37:01,380 INFO API extraction started
+2026-09-23 12:37:01,386 INFO API records: 10
+2026-09-23 12:37:01,386 INFO Database extraction started
+2026-09-23 12:37:01,388 INFO Database records: 10
+2026-09-23 12:37:01,388 INFO Source validation started
+2026-09-23 12:37:01,389 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 12:37:01,389 INFO Cleaning started
+2026-09-23 12:37:01,397 INFO Integration started
+2026-09-23 12:37:01,400 INFO Integrated records: 10
+2026-09-23 12:37:01,400 INFO Final validation started
+2026-09-23 12:37:01,402 INFO Transformation started
+2026-09-23 12:37:01,415 INFO Final dataset created
+2026-09-23 12:37:01,415 INFO PIPELINE EXECUTION SUMMARY
+2026-09-23 12:37:01,415 INFO CSV Records: 11
+2026-09-23 12:37:01,415 INFO API Records: 10
+2026-09-23 12:37:01,415 INFO Database Records: 10
+2026-09-23 12:37:01,415 INFO Integrated Records: 10
+2026-09-23 12:37:01,415 INFO Valid Records: 0
+2026-09-23 12:37:01,415 INFO Rejected Records: 2
+2026-09-23 12:37:01,415 INFO Duplicate Records: 1
+2026-09-23 12:37:01,415 INFO Missing Values: 2
+2026-09-23 12:37:01,415 INFO Processing Time: 0.04
+2026-09-23 12:38:24,365 INFO Pipeline started
+2026-09-23 12:38:24,365 INFO CSV extraction started
+2026-09-23 12:38:24,367 INFO CSV records: 11
+2026-09-23 12:38:24,368 INFO API extraction started
+2026-09-23 12:38:24,373 INFO API records: 10
+2026-09-23 12:38:24,373 INFO Database extraction started
+2026-09-23 12:38:24,374 INFO Database records: 10
+2026-09-23 12:38:24,374 INFO Source validation started
+2026-09-23 12:38:24,376 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 12:38:24,376 INFO Cleaning started
+2026-09-23 12:38:24,388 INFO Integration started
+2026-09-23 12:38:24,391 INFO Integrated records: 10
+2026-09-23 12:38:24,391 INFO Incremental processing started
+2026-09-23 12:38:24,394 INFO New records to process: 10
+2026-09-23 12:38:24,394 INFO Final validation started
+2026-09-23 12:38:24,397 INFO Transformation started
+2026-09-23 12:38:24,406 INFO Final dataset created
+2026-09-23 12:38:24,406 INFO PIPELINE EXECUTION SUMMARY
+2026-09-23 12:38:24,406 INFO CSV Records: 11
+2026-09-23 12:38:24,406 INFO API Records: 10
+2026-09-23 12:38:24,406 INFO Database Records: 10
+2026-09-23 12:38:24,406 INFO Integrated Records: 10
+2026-09-23 12:38:24,407 INFO Valid Records: 8
+2026-09-23 12:38:24,407 INFO Rejected Records: 2
+2026-09-23 12:38:24,407 INFO Duplicate Records: 1
+2026-09-23 12:38:24,407 INFO Missing Values: 2
+2026-09-23 12:38:24,407 INFO Processing Time: 0.04
+2026-09-23 12:42:35,772 INFO Pipeline started
+2026-09-23 12:42:35,772 INFO CSV extraction started
+2026-09-23 12:42:35,774 INFO CSV records: 11
+2026-09-23 12:42:35,774 INFO API extraction started
+2026-09-23 12:42:35,779 INFO API records: 10
+2026-09-23 12:42:35,780 INFO Database extraction started
+2026-09-23 12:42:35,781 INFO Database records: 10
+2026-09-23 12:42:35,781 INFO Source validation started
+2026-09-23 12:42:35,782 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 12:42:35,782 INFO Cleaning started
+2026-09-23 12:42:35,791 INFO Integration started
+2026-09-23 12:42:35,794 INFO Integrated records: 10
+2026-09-23 12:42:35,794 INFO Incremental processing started
+2026-09-23 12:42:35,797 INFO New records to process: 2
+2026-09-23 12:42:35,797 INFO Final validation started
+2026-09-23 12:42:35,798 INFO Transformation started
+2026-09-23 12:46:41,444 INFO Pipeline started
+2026-09-23 12:46:41,444 INFO CSV extraction started
+2026-09-23 12:46:41,446 INFO CSV records: 11
+2026-09-23 12:46:41,446 INFO API extraction started
+2026-09-23 12:46:41,450 INFO API records: 10
+2026-09-23 12:46:41,450 INFO Database extraction started
+2026-09-23 12:46:41,452 INFO Database records: 10
+2026-09-23 12:46:41,452 INFO Source validation started
+2026-09-23 12:46:41,453 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 12:46:41,453 INFO Cleaning started
+2026-09-23 12:46:41,463 INFO Integration started
+2026-09-23 12:46:41,465 INFO Integrated records: 10
+2026-09-23 12:46:41,465 INFO Incremental processing started
+2026-09-23 12:46:41,468 INFO New records to process: 2
+2026-09-23 12:46:41,468 INFO Final validation started
+2026-09-23 12:46:41,469 INFO Transformation started
+2026-09-23 12:54:22,333 INFO Pipeline started
+2026-09-23 12:54:22,333 INFO CSV extraction started
+2026-09-23 12:54:22,336 INFO CSV records: 11
+2026-09-23 12:54:22,336 INFO API extraction started
+2026-09-23 12:54:22,343 INFO API records: 10
+2026-09-23 12:54:22,343 INFO Database extraction started
+2026-09-23 12:54:22,345 INFO Database records: 10
+2026-09-23 12:54:22,345 INFO Source validation started
+2026-09-23 12:54:22,347 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 12:54:22,347 INFO Cleaning started
+2026-09-23 12:54:22,361 INFO Integration started
+2026-09-23 12:54:22,365 INFO Integrated records: 10
+2026-09-23 12:54:22,366 INFO Incremental processing started
+2026-09-23 12:54:22,370 INFO New records to process: 2
+2026-09-23 12:54:22,371 INFO Final validation started
+2026-09-23 12:54:22,373 INFO Transformation started
+2026-09-23 12:56:35,512 INFO Pipeline started
+2026-09-23 12:56:35,512 INFO CSV extraction started
+2026-09-23 12:56:35,515 INFO CSV records: 11
+2026-09-23 12:56:35,515 INFO API extraction started
+2026-09-23 12:56:35,521 INFO API records: 10
+2026-09-23 12:56:35,521 INFO Database extraction started
+2026-09-23 12:56:35,523 INFO Database records: 10
+2026-09-23 12:56:35,523 INFO Source validation started
+2026-09-23 12:56:35,524 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 12:56:35,524 INFO Cleaning started
+2026-09-23 12:56:35,548 INFO Integration started
+2026-09-23 12:56:35,556 INFO Integrated records: 10
+2026-09-23 12:56:35,556 INFO Incremental processing started
+2026-09-23 12:56:35,560 INFO New records to process: 10
+2026-09-23 12:56:35,561 INFO Final validation started
+2026-09-23 12:56:35,568 INFO Transformation started
+2026-09-23 12:56:35,594 INFO Final dataset created
+2026-09-23 12:56:35,594 INFO PIPELINE EXECUTION SUMMARY
+2026-09-23 12:56:35,594 INFO CSV Records: 11
+2026-09-23 12:56:35,594 INFO API Records: 10
+2026-09-23 12:56:35,594 INFO Database Records: 10
+2026-09-23 12:56:35,595 INFO Integrated Records: 10
+2026-09-23 12:56:35,595 INFO Valid Records: 8
+2026-09-23 12:56:35,595 INFO Rejected Records: 2
+2026-09-23 12:56:35,595 INFO Duplicate Records: 1
+2026-09-23 12:56:35,595 INFO Missing Values: 2
+2026-09-23 12:56:35,595 INFO Processing Time: 0.08
+2026-09-23 12:57:14,062 INFO Pipeline started
+2026-09-23 12:57:14,062 INFO CSV extraction started
+2026-09-23 12:57:14,065 INFO CSV records: 11
+2026-09-23 12:57:14,065 INFO API extraction started
+2026-09-23 12:57:14,070 INFO API records: 10
+2026-09-23 12:57:14,070 INFO Database extraction started
+2026-09-23 12:57:14,071 INFO Database records: 10
+2026-09-23 12:57:14,071 INFO Source validation started
+2026-09-23 12:57:14,072 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 12:57:14,073 INFO Cleaning started
+2026-09-23 12:57:14,082 INFO Integration started
+2026-09-23 12:57:14,085 INFO Integrated records: 10
+2026-09-23 12:57:14,085 INFO Incremental processing started
+2026-09-23 12:57:14,087 INFO New records to process: 2
+2026-09-23 12:57:14,088 INFO Final validation started
+2026-09-23 12:57:14,089 INFO Transformation started
+2026-09-23 12:57:14,095 INFO Final dataset created
+2026-09-23 12:57:14,095 INFO PIPELINE EXECUTION SUMMARY
+2026-09-23 12:57:14,095 INFO CSV Records: 11
+2026-09-23 12:57:14,095 INFO API Records: 10
+2026-09-23 12:57:14,095 INFO Database Records: 10
+2026-09-23 12:57:14,095 INFO Integrated Records: 2
+2026-09-23 12:57:14,096 INFO Valid Records: 0
+2026-09-23 12:57:14,096 INFO Rejected Records: 2
+2026-09-23 12:57:14,096 INFO Duplicate Records: 1
+2026-09-23 12:57:14,096 INFO Missing Values: 2
+2026-09-23 12:57:14,096 INFO Processing Time: 0.03
+2026-09-23 12:58:39,628 INFO Pipeline started
+2026-09-23 12:58:39,628 INFO CSV extraction started
+2026-09-23 12:58:39,631 INFO CSV records: 11
+2026-09-23 12:58:39,631 INFO API extraction started
+2026-09-23 12:58:39,638 INFO API records: 10
+2026-09-23 12:58:39,638 INFO Database extraction started
+2026-09-23 12:58:39,640 INFO Database records: 10
+2026-09-23 12:58:39,640 INFO Source validation started
+2026-09-23 12:58:39,642 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 12:58:39,642 INFO Cleaning started
+2026-09-23 12:58:39,655 INFO Integration started
+2026-09-23 12:58:39,658 INFO Integrated records: 10
+2026-09-23 12:58:39,658 INFO Incremental processing started
+2026-09-23 12:58:39,660 INFO New records to process: 10
+2026-09-23 12:58:39,661 INFO Final validation started
+2026-09-23 12:58:39,663 INFO Transformation started
+2026-09-23 12:58:39,689 INFO Final dataset created
+2026-09-23 12:58:39,689 INFO PIPELINE EXECUTION SUMMARY
+2026-09-23 12:58:39,689 INFO CSV Records: 11
+2026-09-23 12:58:39,689 INFO API Records: 10
+2026-09-23 12:58:39,690 INFO Database Records: 10
+2026-09-23 12:58:39,690 INFO Integrated Records: 10
+2026-09-23 12:58:39,690 INFO Valid Records: 8
+2026-09-23 12:58:39,690 INFO Rejected Records: 2
+2026-09-23 12:58:39,690 INFO Duplicate Records: 1
+2026-09-23 12:58:39,690 INFO Missing Values: 2
+2026-09-23 12:58:39,690 INFO Processing Time: 0.06
+2026-09-23 12:58:51,368 INFO Pipeline started
+2026-09-23 12:58:51,368 INFO CSV extraction started
+2026-09-23 12:58:51,370 INFO CSV records: 11
+2026-09-23 12:58:51,370 INFO API extraction started
+2026-09-23 12:58:51,376 INFO API records: 10
+2026-09-23 12:58:51,376 INFO Database extraction started
+2026-09-23 12:58:51,378 INFO Database records: 10
+2026-09-23 12:58:51,378 INFO Source validation started
+2026-09-23 12:58:51,379 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 12:58:51,379 INFO Cleaning started
+2026-09-23 12:58:51,390 INFO Integration started
+2026-09-23 12:58:51,393 INFO Integrated records: 10
+2026-09-23 12:58:51,393 INFO Incremental processing started
+2026-09-23 12:58:51,396 INFO New records to process: 2
+2026-09-23 12:58:51,396 INFO Final validation started
+2026-09-23 12:58:51,398 INFO Transformation started
+2026-09-23 12:58:51,412 INFO Final dataset created
+2026-09-23 12:58:51,412 INFO PIPELINE EXECUTION SUMMARY
+2026-09-23 12:58:51,412 INFO CSV Records: 11
+2026-09-23 12:58:51,412 INFO API Records: 10
+2026-09-23 12:58:51,412 INFO Database Records: 10
+2026-09-23 12:58:51,412 INFO Integrated Records: 2
+2026-09-23 12:58:51,412 INFO Valid Records: 0
+2026-09-23 12:58:51,412 INFO Rejected Records: 2
+2026-09-23 12:58:51,412 INFO Duplicate Records: 1
+2026-09-23 12:58:51,412 INFO Missing Values: 2
+2026-09-23 12:58:51,412 INFO Processing Time: 0.04
+2026-09-23 12:59:15,255 INFO Pipeline started
+2026-09-23 12:59:15,255 INFO CSV extraction started
+2026-09-23 12:59:15,257 INFO CSV records: 11
+2026-09-23 12:59:15,257 INFO API extraction started
+2026-09-23 12:59:15,262 INFO API records: 10
+2026-09-23 12:59:15,262 INFO Database extraction started
+2026-09-23 12:59:15,264 INFO Database records: 10
+2026-09-23 12:59:15,264 INFO Source validation started
+2026-09-23 12:59:15,266 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 12:59:15,266 INFO Cleaning started
+2026-09-23 12:59:15,280 INFO Integration started
+2026-09-23 12:59:15,283 INFO Integrated records: 10
+2026-09-23 12:59:15,283 INFO Incremental processing started
+2026-09-23 12:59:15,286 INFO New records to process: 2
+2026-09-23 12:59:15,286 INFO Final validation started
+2026-09-23 12:59:15,288 INFO Transformation started
+2026-09-23 12:59:15,298 INFO Final dataset created
+2026-09-23 12:59:15,298 INFO PIPELINE EXECUTION SUMMARY
+2026-09-23 12:59:15,298 INFO CSV Records: 11
+2026-09-23 12:59:15,298 INFO API Records: 10
+2026-09-23 12:59:15,298 INFO Database Records: 10
+2026-09-23 12:59:15,298 INFO Integrated Records: 2
+2026-09-23 12:59:15,298 INFO Valid Records: 0
+2026-09-23 12:59:15,298 INFO Rejected Records: 2
+2026-09-23 12:59:15,298 INFO Duplicate Records: 1
+2026-09-23 12:59:15,298 INFO Missing Values: 2
+2026-09-23 12:59:15,298 INFO Processing Time: 0.04
+2026-09-23 13:00:19,899 INFO Pipeline started
+2026-09-23 13:00:19,899 INFO CSV extraction started
+2026-09-23 13:00:19,901 INFO CSV records: 11
+2026-09-23 13:00:19,901 INFO API extraction started
+2026-09-23 13:00:19,906 INFO API records: 10
+2026-09-23 13:00:19,906 INFO Database extraction started
+2026-09-23 13:00:19,907 INFO Database records: 10
+2026-09-23 13:00:19,907 INFO Source validation started
+2026-09-23 13:00:19,909 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 13:00:19,909 INFO Cleaning started
+2026-09-23 13:00:19,918 INFO Integration started
+2026-09-23 13:00:19,920 INFO Integrated records: 10
+2026-09-23 13:00:19,920 INFO Incremental processing started
+2026-09-23 13:00:19,923 INFO New records to process: 2
+2026-09-23 13:00:19,923 INFO Final validation started
+2026-09-23 13:00:19,925 INFO Transformation started
+2026-09-23 13:00:19,935 INFO Final dataset created
+2026-09-23 13:00:19,935 INFO PIPELINE EXECUTION SUMMARY
+2026-09-23 13:00:19,935 INFO CSV Records: 11
+2026-09-23 13:00:19,935 INFO API Records: 10
+2026-09-23 13:00:19,935 INFO Database Records: 10
+2026-09-23 13:00:19,935 INFO Integrated Records: 2
+2026-09-23 13:00:19,935 INFO Valid Records: 0
+2026-09-23 13:00:19,935 INFO Rejected Records: 2
+2026-09-23 13:00:19,935 INFO Duplicate Records: 1
+2026-09-23 13:00:19,935 INFO Missing Values: 2
+2026-09-23 13:00:19,935 INFO Processing Time: 0.04
+2026-09-23 13:00:43,442 INFO Pipeline started
+2026-09-23 13:00:43,442 INFO CSV extraction started
+2026-09-23 13:00:43,444 INFO CSV records: 11
+2026-09-23 13:00:43,444 INFO API extraction started
+2026-09-23 13:00:43,449 INFO API records: 10
+2026-09-23 13:00:43,449 INFO Database extraction started
+2026-09-23 13:00:43,451 INFO Database records: 10
+2026-09-23 13:00:43,451 INFO Source validation started
+2026-09-23 13:00:43,453 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 13:00:43,453 INFO Cleaning started
+2026-09-23 13:00:43,461 INFO Integration started
+2026-09-23 13:00:43,464 INFO Integrated records: 10
+2026-09-23 13:00:43,464 INFO Incremental processing started
+2026-09-23 13:00:43,467 INFO New records to process: 2
+2026-09-23 13:00:43,467 INFO Final validation started
+2026-09-23 13:00:43,469 INFO Transformation started
+2026-09-23 13:00:43,478 INFO Final dataset created
+2026-09-23 13:00:43,478 INFO PIPELINE EXECUTION SUMMARY
+2026-09-23 13:00:43,479 INFO CSV Records: 11
+2026-09-23 13:00:43,479 INFO API Records: 10
+2026-09-23 13:00:43,479 INFO Database Records: 10
+2026-09-23 13:00:43,479 INFO Integrated Records: 2
+2026-09-23 13:00:43,479 INFO Valid Records: 0
+2026-09-23 13:00:43,479 INFO Rejected Records: 2
+2026-09-23 13:00:43,479 INFO Duplicate Records: 1
+2026-09-23 13:00:43,479 INFO Missing Values: 2
+2026-09-23 13:00:43,479 INFO Processing Time: 0.04
+2026-09-23 14:40:21,404 INFO Pipeline started
+2026-09-23 14:40:21,404 INFO CSV extraction started
+2026-09-23 14:40:21,416 INFO CSV records: 11
+2026-09-23 14:40:21,416 INFO API extraction started
+2026-09-23 14:40:21,435 INFO API records: 10
+2026-09-23 14:40:21,435 INFO Database extraction started
+2026-09-23 14:40:21,444 INFO Database records: 10
+2026-09-23 14:40:21,444 INFO Source validation started
+2026-09-23 14:40:21,450 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 14:40:21,451 INFO Cleaning started
+2026-09-23 14:40:21,502 INFO Integration started
+2026-09-23 14:40:21,516 INFO Integrated records: 10
+2026-09-23 14:40:21,516 INFO Incremental processing started
+2026-09-23 14:40:21,528 INFO New records to process: 2
+2026-09-23 14:40:21,528 INFO Final validation started
+2026-09-23 14:40:21,537 INFO Transformation started
+2026-09-23 14:40:21,586 INFO Final dataset created
+2026-09-23 14:40:21,586 INFO PIPELINE EXECUTION SUMMARY
+2026-09-23 14:40:21,587 INFO CSV Records: 11
+2026-09-23 14:40:21,587 INFO API Records: 10
+2026-09-23 14:40:21,587 INFO Database Records: 10
+2026-09-23 14:40:21,587 INFO Integrated Records: 2
+2026-09-23 14:40:21,588 INFO Valid Records: 0
+2026-09-23 14:40:21,588 INFO Rejected Records: 2
+2026-09-23 14:40:21,588 INFO Duplicate Records: 1
+2026-09-23 14:40:21,588 INFO Missing Values: 2
+2026-09-23 14:40:21,588 INFO Processing Time: 0.18
+2026-09-23 14:47:06,910 INFO Pipeline started
+2026-09-23 14:47:06,912 INFO CSV extraction started
+2026-09-23 14:47:06,924 INFO CSV records: 11
+2026-09-23 14:47:06,925 INFO API extraction started
+2026-09-23 14:47:06,950 INFO API records: 10
+2026-09-23 14:47:06,951 INFO Database extraction started
+2026-09-23 14:47:06,957 INFO Database records: 10
+2026-09-23 14:47:06,957 INFO Source validation started
+2026-09-23 14:47:06,964 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 14:47:06,965 INFO Cleaning started
+2026-09-23 14:47:07,019 INFO Integration started
+2026-09-23 14:47:07,040 INFO Integrated records: 10
+2026-09-23 14:47:07,041 INFO Incremental processing started
+2026-09-23 14:47:07,053 INFO New records to process: 10
+2026-09-23 14:47:07,054 INFO Final validation started
+2026-09-23 14:47:07,068 INFO Transformation started
+2026-09-23 14:47:07,141 INFO Final dataset created
+2026-09-23 14:47:07,142 INFO PIPELINE EXECUTION SUMMARY
+2026-09-23 14:47:07,143 INFO CSV Records: 11
+2026-09-23 14:47:07,143 INFO API Records: 10
+2026-09-23 14:47:07,144 INFO Database Records: 10
+2026-09-23 14:47:07,144 INFO Integrated Records: 10
+2026-09-23 14:47:07,144 INFO Valid Records: 8
+2026-09-23 14:47:07,145 INFO Rejected Records: 2
+2026-09-23 14:47:07,145 INFO Duplicate Records: 1
+2026-09-23 14:47:07,146 INFO Missing Values: 2
+2026-09-23 14:47:07,146 INFO Processing Time: 0.23
+2026-09-23 14:50:55,744 INFO Pipeline started
+2026-09-23 14:50:55,745 INFO CSV extraction started
+2026-09-23 14:50:55,756 INFO CSV records: 11
+2026-09-23 14:50:55,757 INFO API extraction started
+2026-09-23 14:50:55,777 INFO API records: 10
+2026-09-23 14:50:55,777 INFO Database extraction started
+2026-09-23 14:50:55,785 INFO Database records: 10
+2026-09-23 14:50:55,785 INFO Source validation started
+2026-09-23 14:50:55,791 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 14:50:55,792 INFO Cleaning started
+2026-09-23 14:50:55,840 INFO Integration started
+2026-09-23 14:50:55,853 INFO Integrated records: 10
+2026-09-23 14:50:55,853 INFO Incremental processing started
+2026-09-23 14:50:55,867 INFO New records to process: 2
+2026-09-23 14:50:55,868 INFO Final validation started
+2026-09-23 14:50:55,876 INFO Transformation started
+2026-09-23 14:50:55,922 INFO Final dataset created
+2026-09-23 14:50:55,922 INFO PIPELINE EXECUTION SUMMARY
+2026-09-23 14:50:55,923 INFO CSV Records: 11
+2026-09-23 14:50:55,923 INFO API Records: 10
+2026-09-23 14:50:55,923 INFO Database Records: 10
+2026-09-23 14:50:55,923 INFO Integrated Records: 2
+2026-09-23 14:50:55,924 INFO Valid Records: 0
+2026-09-23 14:50:55,924 INFO Rejected Records: 2
+2026-09-23 14:50:55,924 INFO Duplicate Records: 1
+2026-09-23 14:50:55,924 INFO Missing Values: 2
+2026-09-23 14:50:55,924 INFO Processing Time: 0.18
+2026-09-23 15:17:35,532 INFO Pipeline started
+2026-09-23 15:17:35,533 INFO CSV extraction started
+2026-09-23 15:17:35,540 INFO CSV records: 11
+2026-09-23 15:17:35,540 INFO API extraction started
+2026-09-23 15:17:35,566 INFO API records: 10
+2026-09-23 15:17:35,566 INFO Database extraction started
+2026-09-23 15:17:35,570 INFO Database records: 10
+2026-09-23 15:17:35,570 INFO Source validation started
+2026-09-23 15:17:35,573 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 15:17:35,574 INFO Cleaning started
+2026-09-23 15:17:35,601 INFO Integration started
+2026-09-23 15:17:35,608 INFO Integrated records: 10
+2026-09-23 15:17:35,608 INFO Incremental processing started
+2026-09-23 15:17:35,615 INFO New records to process: 2
+2026-09-23 15:17:35,615 INFO Final validation started
+2026-09-23 15:17:35,619 INFO Transformation started
+2026-09-23 15:17:35,642 INFO Final dataset created
+2026-09-23 15:17:35,642 INFO PIPELINE EXECUTION SUMMARY
+2026-09-23 15:17:35,643 INFO CSV Records: 11
+2026-09-23 15:17:35,643 INFO API Records: 10
+2026-09-23 15:17:35,643 INFO Database Records: 10
+2026-09-23 15:17:35,643 INFO Integrated Records: 2
+2026-09-23 15:17:35,643 INFO Valid Records: 0
+2026-09-23 15:17:35,643 INFO Rejected Records: 2
+2026-09-23 15:17:35,643 INFO Duplicate Records: 1
+2026-09-23 15:17:35,643 INFO Missing Values: 2
+2026-09-23 15:17:35,644 INFO Processing Time: 0.11
+2026-09-23 15:18:15,071 INFO Pipeline started
+2026-09-23 15:18:15,072 INFO CSV extraction started
+2026-09-23 15:18:15,075 INFO CSV records: 11
+2026-09-23 15:18:15,075 INFO API extraction started
+2026-09-23 15:18:15,081 INFO API records: 10
+2026-09-23 15:18:15,082 INFO Database extraction started
+2026-09-23 15:18:15,085 INFO Database records: 10
+2026-09-23 15:18:15,085 INFO Source validation started
+2026-09-23 15:18:15,088 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 15:18:15,088 INFO Cleaning started
+2026-09-23 15:18:15,103 INFO Integration started
+2026-09-23 15:18:15,107 INFO Integrated records: 10
+2026-09-23 15:18:15,107 INFO Incremental processing started
+2026-09-23 15:18:15,113 INFO New records to process: 2
+2026-09-23 15:18:15,113 INFO Final validation started
+2026-09-23 15:18:15,115 INFO Transformation started
+2026-09-23 15:18:15,130 INFO Final dataset created
+2026-09-23 15:18:15,130 INFO PIPELINE EXECUTION SUMMARY
+2026-09-23 15:18:15,131 INFO CSV Records: 11
+2026-09-23 15:18:15,131 INFO API Records: 10
+2026-09-23 15:18:15,131 INFO Database Records: 10
+2026-09-23 15:18:15,131 INFO Integrated Records: 2
+2026-09-23 15:18:15,131 INFO Valid Records: 0
+2026-09-23 15:18:15,131 INFO Rejected Records: 2
+2026-09-23 15:18:15,131 INFO Duplicate Records: 1
+2026-09-23 15:18:15,131 INFO Missing Values: 2
+2026-09-23 15:18:15,131 INFO Processing Time: 0.06
+2026-09-23 15:18:56,287 INFO Pipeline started
+2026-09-23 15:18:56,287 INFO CSV extraction started
+2026-09-23 15:18:56,291 INFO CSV records: 11
+2026-09-23 15:18:56,291 INFO API extraction started
+2026-09-23 15:18:56,300 INFO API records: 10
+2026-09-23 15:18:56,300 INFO Database extraction started
+2026-09-23 15:18:56,303 INFO Database records: 10
+2026-09-23 15:18:56,303 INFO Source validation started
+2026-09-23 15:18:56,306 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 15:18:56,307 INFO Cleaning started
+2026-09-23 15:18:56,333 INFO Integration started
+2026-09-23 15:18:56,339 INFO Integrated records: 10
+2026-09-23 15:18:56,340 INFO Incremental processing started
+2026-09-23 15:18:56,341 INFO New records to process: 10
+2026-09-23 15:18:56,341 INFO Final validation started
+2026-09-23 15:18:56,346 INFO Transformation started
+2026-09-23 15:21:26,764 INFO Pipeline started
+2026-09-23 15:21:26,764 INFO CSV extraction started
+2026-09-23 15:21:26,778 INFO CSV records: 11
+2026-09-23 15:21:26,778 INFO API extraction started
+2026-09-23 15:21:26,800 INFO API records: 10
+2026-09-23 15:21:26,800 INFO Database extraction started
+2026-09-23 15:21:26,808 INFO Database records: 10
+2026-09-23 15:21:26,808 INFO Source validation started
+2026-09-23 15:21:26,813 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 15:21:26,814 INFO Cleaning started
+2026-09-23 15:21:26,871 INFO Integration started
+2026-09-23 15:21:26,886 INFO Integrated records: 10
+2026-09-23 15:21:26,887 INFO Incremental processing started
+2026-09-23 15:21:26,889 INFO New records to process: 10
+2026-09-23 15:21:26,890 INFO Final validation started
+2026-09-23 15:21:26,901 INFO Transformation started
+2026-09-23 15:21:26,955 INFO Final dataset created
+2026-09-23 15:21:26,956 INFO PIPELINE EXECUTION SUMMARY
+2026-09-23 15:21:26,956 INFO CSV Records: 11
+2026-09-23 15:21:26,956 INFO API Records: 10
+2026-09-23 15:21:26,956 INFO Database Records: 10
+2026-09-23 15:21:26,957 INFO Integrated Records: 10
+2026-09-23 15:21:26,957 INFO Valid Records: 8
+2026-09-23 15:21:26,957 INFO Rejected Records: 2
+2026-09-23 15:21:26,957 INFO Duplicate Records: 1
+2026-09-23 15:21:26,957 INFO Missing Values: 2
+2026-09-23 15:21:26,958 INFO Processing Time: 0.19
+2026-09-23 15:22:09,931 INFO Pipeline started
+2026-09-23 15:22:09,931 INFO CSV extraction started
+2026-09-23 15:22:09,940 INFO CSV records: 11
+2026-09-23 15:22:09,940 INFO API extraction started
+2026-09-23 15:22:09,957 INFO API records: 10
+2026-09-23 15:22:09,957 INFO Database extraction started
+2026-09-23 15:22:09,963 INFO Database records: 10
+2026-09-23 15:22:09,963 INFO Source validation started
+2026-09-23 15:22:09,970 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 15:22:09,971 INFO Cleaning started
+2026-09-23 15:22:10,014 INFO Integration started
+2026-09-23 15:22:10,026 INFO Integrated records: 10
+2026-09-23 15:22:10,026 INFO Incremental processing started
+2026-09-23 15:22:10,038 INFO New records to process: 2
+2026-09-23 15:22:10,038 INFO Final validation started
+2026-09-23 15:22:10,044 INFO Transformation started
+2026-09-23 15:22:10,077 INFO Final dataset created
+2026-09-23 15:22:10,078 INFO PIPELINE EXECUTION SUMMARY
+2026-09-23 15:22:10,078 INFO CSV Records: 11
+2026-09-23 15:22:10,078 INFO API Records: 10
+2026-09-23 15:22:10,078 INFO Database Records: 10
+2026-09-23 15:22:10,078 INFO Integrated Records: 2
+2026-09-23 15:22:10,079 INFO Valid Records: 0
+2026-09-23 15:22:10,079 INFO Rejected Records: 2
+2026-09-23 15:22:10,079 INFO Duplicate Records: 1
+2026-09-23 15:22:10,079 INFO Missing Values: 2
+2026-09-23 15:22:10,079 INFO Processing Time: 0.15
+2026-09-23 15:23:08,412 INFO Pipeline started
+2026-09-23 15:23:08,412 INFO CSV extraction started
+2026-09-23 15:23:08,421 INFO CSV records: 11
+2026-09-23 15:23:08,422 INFO API extraction started
+2026-09-23 15:23:08,439 INFO API records: 10
+2026-09-23 15:23:08,439 INFO Database extraction started
+2026-09-23 15:23:08,444 INFO Database records: 10
+2026-09-23 15:23:08,445 INFO Source validation started
+2026-09-23 15:23:08,450 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 15:23:08,450 INFO Cleaning started
+2026-09-23 15:23:08,488 INFO Integration started
+2026-09-23 15:23:08,499 INFO Integrated records: 10
+2026-09-23 15:23:08,499 INFO Incremental processing started
+2026-09-23 15:23:08,506 INFO New records to process: 2
+2026-09-23 15:23:08,506 INFO Final validation started
+2026-09-23 15:23:08,511 INFO Transformation started
+2026-09-23 15:23:08,536 INFO Final dataset created
+2026-09-23 15:23:08,536 INFO PIPELINE EXECUTION SUMMARY
+2026-09-23 15:23:08,536 INFO CSV Records: 11
+2026-09-23 15:23:08,536 INFO API Records: 10
+2026-09-23 15:23:08,537 INFO Database Records: 10
+2026-09-23 15:23:08,537 INFO Integrated Records: 2
+2026-09-23 15:23:08,537 INFO Valid Records: 0
+2026-09-23 15:23:08,537 INFO Rejected Records: 2
+2026-09-23 15:23:08,537 INFO Duplicate Records: 1
+2026-09-23 15:23:08,537 INFO Missing Values: 2
+2026-09-23 15:23:08,537 INFO Processing Time: 0.12
+2026-09-23 15:23:26,867 INFO Pipeline started
+2026-09-23 15:23:26,867 INFO CSV extraction started
+2026-09-23 15:23:26,876 INFO CSV records: 11
+2026-09-23 15:23:26,876 INFO API extraction started
+2026-09-23 15:23:26,895 INFO API records: 10
+2026-09-23 15:23:26,895 INFO Database extraction started
+2026-09-23 15:23:26,901 INFO Database records: 10
+2026-09-23 15:23:26,901 INFO Source validation started
+2026-09-23 15:23:26,907 WARNING CSV validation errors: ['student_id contains duplicates']
+2026-09-23 15:23:26,908 INFO Cleaning started
+2026-09-23 15:23:26,952 INFO Integration started
+2026-09-23 15:23:26,963 INFO Integrated records: 10
+2026-09-23 15:23:26,964 INFO Incremental processing started
+2026-09-23 15:23:26,966 INFO New records to process: 10
+2026-09-23 15:23:26,967 INFO Final validation started
+2026-09-23 15:23:26,978 INFO Transformation started
+2026-09-23 15:23:27,021 INFO Final dataset created
+2026-09-23 15:23:27,022 INFO PIPELINE EXECUTION SUMMARY
+2026-09-23 15:23:27,022 INFO CSV Records: 11
+2026-09-23 15:23:27,022 INFO API Records: 10
+2026-09-23 15:23:27,022 INFO Database Records: 10
+2026-09-23 15:23:27,022 INFO Integrated Records: 10
+2026-09-23 15:23:27,023 INFO Valid Records: 8
+2026-09-23 15:23:27,023 INFO Rejected Records: 2
+2026-09-23 15:23:27,023 INFO Duplicate Records: 1
+2026-09-23 15:23:27,023 INFO Missing Values: 2
+2026-09-23 15:23:27,023 INFO Processing Time: 0.16

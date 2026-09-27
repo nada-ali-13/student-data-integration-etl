@@ -1,0 +1,13 @@
+{
+    "paths": {
+        "csv": "data/raw/students.csv",
+        "database": "database/students.db",
+        "final_output": "data/processed/final_dataset.csv",
+        "rejected_output": "data/rejected/rejected_records.csv",
+        "log": "logs/pipeline.log"
+    },
+    "api": {
+        "url": "http://127.0.0.1:8000/students",
+        "timeout": 5
+    }
+}

@@ -1,0 +1,3 @@
+﻿student_id,student_name,age,major,city,gpa,attendance,status,course,score,semester,error_reason
+1007,Huda Hassan,85.0,Computer Science,Taiz,4.5,80,Active,Python Programming,70.0,2026-1,Invalid Age; Invalid GPA
+1010,Salem Omar,23.0,Computer Engineering,Sanaa,3.1,105,Active,Python Programming,90.0,2026-1,Invalid Attendance
