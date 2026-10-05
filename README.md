@@ -2,9 +2,10 @@
 
 ## 1. Project Overview
 
-This project is a data pipeline that processes student data from three different sources. It cleans, integrates, validates, and saves the result as CSV files.
+This project processes student data from five sources: CSV, a REST API, a SQLite database, an HTML table, and MongoDB. It cleans, integrates, validates, and saves valid and rejected records as CSV files. It also tracks pipeline metrics and supports incremental processing.
 
 The pipeline supports incremental processing. When a final output already exists, only records with new `student_id` values are processed.
+
 
 ## 2. Architecture
 
@@ -37,16 +38,18 @@ Execution starts in `main.py`. It calls the extraction modules, then performs cl
 The pipeline uses the following three data sources:
 
 1. **CSV:** `data/raw/students.csv`, which contains basic student information such as `student_id`, `age`, `major`, and `city`.
-2. **REST API:** A local mock service at `http://127.0.0.1:8000/students`. It provides fields such as `gpa`, `attendance`, and `status`.
-3. **SQLite Database:** `database/students.db`. Student enrollment, course, score, and semester data are extracted from the `enrollments` and `courses` tables.
+2. **REST API:** The local mock service at `http://127.0.0.1:8000/students`, which provides fields such as `gpa`, `attendance`, and `status`.
+3. **SQLite Database:** The database configured in `config.json`. Enrollment, course, score, and semester data are extracted from the `enrollments` and `courses` tables.
+4. **HTML table:** The majors table in `web_scraping/majors.html`, served locally at the URL configured in `config.json`. It includes `student_id`, major, department, duration, and degree type.
+5. **MongoDB:** The `students` collection in the `student_database` database, accessed through the MongoDB URI in `config.json`.
 
-The three sources are joined using `student_id`.
+All five sources are integrated with left joins on `student_id`. That field must be present in each source, and its values must use compatible types for the joins.
 
 ## 4. ETL Pipeline
 
 ### Extract
 
-The extraction stage reads the CSV file, sends a GET request to the API, and runs a SQL query against the SQLite database. Each source checks that data is available before returning it.
+The extraction stage reads the CSV file, sends a GET request to the API, queries SQLite, downloads and parses the configured HTML table, and reads documents from MongoDB. The API, HTML server, SQLite database, and MongoDB service must be available when the pipeline runs.
 
 ### Transform
 
@@ -66,13 +69,13 @@ The pipeline checks that `student_id` exists and is not missing, and that numeri
 
 ### Integrate
 
-CSV data is joined with API data using a `left join` on `student_id`. The result is then joined with the database data using the same key. This preserves CSV records even when a matching record is not available in another source.
+The CSV data is the left side of the integration. API, SQLite, HTML, and MongoDB data are each added with a `left join` on `student_id`, preserving CSV records when another source has no matching student. Source columns are cleaned before integration so names and key types are consistent.
 
 ### Load
 
 Valid records are saved to `data/processed/final_dataset.csv`. Rejected records are saved to `data/rejected/rejected_records.csv`, and execution information is written to `logs/pipeline.log`.
 
-Before saving, the pipeline compares `student_id` values with the existing final dataset to avoid processing the same records again.
+Before processing, the pipeline compares `student_id` values with the existing final dataset and skips records already present. If there are no new records, it reports the metrics and exits without rewriting the output files. The final dataset includes a `source` field; its current value is the constant `CSV+API+DATABASE`.
 
 ## 5. Data Quality
 
@@ -102,10 +105,11 @@ On Windows, activate it with:
 .venv\Scripts\activate
 ```
 
-Install the project requirements:
+Install the listed project requirements and the packages used by the HTML and MongoDB sources:
 
 ```bash
 pip install -r requirements.txt
+pip install beautifulsoup4 pymongo
 ```
 
 Create the SQLite database when needed:
@@ -114,25 +118,37 @@ Create the SQLite database when needed:
 python database/create_database.py
 ```
 
+Ensure the database file is at the path configured by `paths.database` in `config.json`. Currently, the creation script writes `students.db` in the working directory, while the default configuration points to `database/students.db`; make these paths match before running the pipeline.
+
+MongoDB must be running at the configured URI, and the `student_database.students` collection must contain documents for the MongoDB extraction test to pass.
+
 ## 7. Running
 
-Because the API source is local, start the mock API in a separate terminal:
+Start each local service in its own terminal from the project root. First, start the mock API:
 
 ```bash
 python mock_api.py
 ```
 
-Then run the pipeline in another terminal:
+Next, serve the project directory so the HTML page is available at the configured port (`5500` by default):
+
+```bash
+python -m http.server 5500
+```
+
+Keep MongoDB running separately. Once the API and HTML server are available, run the pipeline in another terminal:
 
 ```bash
 python main.py
 ```
 
-Run the test suite with:
+Run the pipeline tests with:
 
 ```bash
-pytest -q
+python -m pytest -v tests/test_pipeline.py
 ```
+
+The source extraction and integration tests also require the API, HTML server, SQLite database, and MongoDB collection to be available. The final-dataset test expects `data/processed/final_dataset.csv` to exist and contain records.
 
 ## 8. Output
 
@@ -140,6 +156,7 @@ pytest -q
 - `data/rejected/rejected_records.csv`: Records that failed the quality rules, including their `error_reason`.
 - `logs/pipeline.log`: Execution logs, errors, and metrics.
 - Terminal output: A summary of extracted, integrated, valid, and rejected records, as well as duplicates and missing values.
+- The `source` column currently contains the fixed label `CSV+API+DATABASE`.
 
 ## Questions and Answers
 
@@ -153,7 +170,7 @@ Each source may use a different format and schema, and may contain missing, dupl
 
 ### 3. What is the difference between Extract, Transform, and Load?
 
-- **Extract:** Read data from the CSV file, API, and database.
+- **Extract:** Read data from the CSV file, API, database, HTML table, and MongoDB.
 - **Transform:** Clean and standardize the data, fill missing values, and create derived columns.
 - **Load:** Save the resulting data to the output files or another final storage system.
 
@@ -161,7 +178,7 @@ This project also includes **Validate** and **Integrate** stages to ensure quali
 
 ### 4. What problems did you face while integrating the data?
 
-The main challenges were different schemas across sources, records present in one source but missing from another, duplicates, missing values, and invalid values such as out-of-range GPA or attendance. These issues were handled by normalizing column names and types, using a `left join` on `student_id`, and validating the integrated data.
+The main challenges were different schemas and key types across sources, records present in one source but missing from another, duplicates, missing values, and invalid values such as out-of-range GPA or attendance. These issues are handled by cleaning and normalizing the source data, joining on `student_id`, and validating the integrated data.
 
 ### 5. How did you handle Missing Values?
 

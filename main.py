@@ -7,6 +7,8 @@ import pandas as pd
 from app.sources.csv_source import extract_csv
 from app.sources.api_source import extract_api
 from app.sources.database_source import extract_database
+from app.sources.web_scraping_source import scrape_students
+from app.sources.mongodb_source import extract_mongodb_data
 
 from app.transformation.cleaner import clean_data
 from app.transformation.integration import integrate_data
@@ -83,6 +85,31 @@ def run_pipeline():
         f"Database records: {len(database_data)}"
     )
 
+    logger.info("web scraping extraction started")
+
+    web_scraping_data = scrape_students(
+        config["paths"]["web_scraping"]
+    )
+
+    metrics.web_scraping_records = len(web_scraping_data)
+
+    logger.info(
+        f"Web scraping records: {len(web_scraping_data)}"
+    )
+
+    logger.info("mongodb extraction started")
+
+    mongodb_data = extract_mongodb_data(
+        config["paths"]["mongodb"]
+    )
+
+    metrics.mongodb_records = len(mongodb_data)
+
+    logger.info(
+        f"MongoDB records: {len(mongodb_data)}"
+    )
+
+
 
 
     # -------------------------
@@ -114,17 +141,23 @@ def run_pipeline():
         csv_data.duplicated().sum()
         + api_data.duplicated().sum()
         + database_data.duplicated().sum()
+        + web_scraping_data.duplicated().sum()
+        + mongodb_data.duplicated().sum()
     )
 
     metrics.missing_values = (
     csv_data.isna().sum().sum()
     + api_data.isna().sum().sum()
     + database_data.isna().sum().sum()
+    + web_scraping_data.isna().sum().sum()
+    + mongodb_data.isna().sum().sum()
 )
 
     csv_data = clean_data(csv_data)
     api_data = clean_data(api_data)
     database_data = clean_data(database_data)
+    web_scraping_data = clean_data(web_scraping_data)
+    mongodb_data = clean_data(mongodb_data)
 
     # -------------------------
     # Integration
@@ -135,7 +168,9 @@ def run_pipeline():
     integrated_data = integrate_data(
         csv_data,
         api_data,
-        database_data
+        database_data,
+        web_scraping_data,  
+        mongodb_data
     )
 
     metrics.integrated_records = len(
@@ -157,7 +192,7 @@ def run_pipeline():
         config["paths"]["final_output"]
     )
 
-    metrics.integrated_records = len(integrated_data)
+    metrics.new_records = len(integrated_data)
 
     logger.info(
         f"New records to process: {len(integrated_data)}"
@@ -248,7 +283,7 @@ def run_pipeline():
 
         if existing_final_data is not None:
             final_valid_data = pd.concat(
-                [existing_final_data, final_valid_data],
+            [existing_final_data, final_valid_data],
                 ignore_index=True
             )
 

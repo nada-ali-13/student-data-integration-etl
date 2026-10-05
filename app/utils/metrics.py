@@ -8,7 +8,10 @@ class PipelineMetrics:
         self.csv_records = 0
         self.api_records = 0
         self.database_records = 0
+        self.web_scraping_records = 0
+        self.mongodb_records = 0
         self.integrated_records = 0
+        self.new_records = 0
         self.valid_records = 0
         self.rejected_records = 0
         self.duplicate_records = 0
@@ -21,7 +24,10 @@ class PipelineMetrics:
             "CSV Records": self.csv_records,
             "API Records": self.api_records,
             "Database Records": self.database_records,
+            "Web Scraping Records": self.web_scraping_records,
+            "MongoDB Records": self.mongodb_records,
             "Integrated Records": self.integrated_records,
+            "New Records": self.new_records,
             "Valid Records": self.valid_records,
             "Rejected Records": self.rejected_records,
             "Duplicate Records": self.duplicate_records,

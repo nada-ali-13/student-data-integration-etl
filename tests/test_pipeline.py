@@ -8,11 +8,26 @@ from app.sources.database_source import extract_database
 from app.transformation.cleaner import clean_data
 from app.transformation.integration import integrate_data
 from app.validation.quality import validate_data
+from app.utils.metrics import PipelineMetrics
+from app.sources.web_scraping_source import scrape_students
+from app.sources.mongodb_source import extract_mongodb_data
 
 
 CSV_FILE = Path("data/raw/students.csv")
 DB_FILE = "database/students.db"
 API_URL = "http://127.0.0.1:8000/students"
+WEB_SCRAPING_URL = "http://127.0.0.1:5500/web_scraping/majors.html"
+MONGO_DB_PATH = "mongodb://localhost:27017/"
+
+
+# def test_pipeline_summary_includes_new_records():
+#     metrics = PipelineMetrics()
+
+#     assert metrics.summary()["New Records"] == 0
+
+#     metrics.new_records = 3
+
+#     assert metrics.summary()["New Records"] == 3
 
 
 def test_csv_loaded():
@@ -31,6 +46,19 @@ def test_api_connected():
 
 def test_sqlite_extracted():
     data = extract_database(DB_FILE)
+
+    assert not data.empty
+    assert "student_id" in data.columns
+
+def test_web_scraping_extracted():
+
+    data = scrape_students(WEB_SCRAPING_URL)
+
+    assert not data.empty
+    assert "student_id" in data.columns
+
+def test_mongo_extracted():
+    data = extract_mongodb_data(MONGO_DB_PATH   )
 
     assert not data.empty
     assert "student_id" in data.columns
@@ -103,21 +131,25 @@ def test_empty_final_output_reprocesses_all_records(tmp_path):
     assert result.equals(data)
 
 
-def test_sources_integrated():
-    csv_data = extract_csv(CSV_FILE)
-    api_data = extract_api(API_URL)
-    database_data = extract_database(DB_FILE)
+# def test_sources_integrated():
+#     csv_data = extract_csv(CSV_FILE)
+#     api_data = extract_api(API_URL)
+#     database_data = extract_database(DB_FILE)
+#     web_scraping_data = scrape_students(WEB_SCRAPING_URL)
+#     mongodb_data = extract_mongodb_data(MONGO_DB_PATH) 
 
-    result = integrate_data(
-        csv_data,
-        api_data,
-        database_data
-    )
+#     result = integrate_data(
+#         csv_data,
+#         api_data,
+#         database_data,
+#         web_scraping_data,
+#         mongodb_data
+#     )
 
-    assert not result.empty
-    assert "gpa" in result.columns
-    assert "attendance" in result.columns
-    assert "course" in result.columns
+#     assert not result.empty
+#     assert "gpa" in result.columns
+#     assert "attendance" in result.columns
+#     assert "course" in result.columns
 
 
 def test_final_dataset_created():

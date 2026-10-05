@@ -4,7 +4,7 @@ import pandas as pd
 def clean_data(data: pd.DataFrame) -> pd.DataFrame:
     data = data.copy()
 
-    # Count duplicates before removing them
+    # remove duplicates 
     data = data.drop_duplicates()
 
     # Normalize column names
